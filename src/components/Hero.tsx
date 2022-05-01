@@ -21,7 +21,7 @@ const MapImage = styled.img`
 
 const TagLine = styled.h2`
     font-size: 6rem;
-    top: 10rem;
+    top: 7rem;
     left: 8rem;
     color: ${AppColors.THEME_SECONDARY};
 `;
@@ -34,7 +34,7 @@ export default function Hero() {
     return (
         <HeroSection>
             <Header />
-            <Wrapper height='45rem'>
+            <Wrapper>
                 <MapImage src={Map} alt='' />
                 <TagLine>
                     <span style={{ color: AppColors.COLOR_GOLD }}>
