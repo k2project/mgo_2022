@@ -26,10 +26,6 @@ const TagLine = styled.h2`
     color: ${AppColors.THEME_SECONDARY};
 `;
 
-const Span = styled.span`
-    color: ${AppColors.COLOR_GOLD};
-`;
-
 export default function Hero() {
     return (
         <HeroSection>

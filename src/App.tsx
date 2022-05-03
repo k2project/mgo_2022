@@ -1,15 +1,14 @@
+import { Paths } from 'config/routes';
 import Home from 'pages/Home';
 import Press from 'pages/Press';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 function App() {
     return (
-        <Router
-        // basename={'/g4g-debate'}
-        >
+        <Router>
             <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/press' element={<Press />} />
+                <Route path={Paths.HOME} element={<Home />} />
+                <Route path={Paths.PRESS} element={<Press />} />
             </Routes>
         </Router>
     );

@@ -1,4 +1,5 @@
 import { AppColors } from 'config/colors';
+import { Paths } from 'config/routes';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import LinkStyled from './LinkStyled';
@@ -20,16 +21,16 @@ export default function Nav() {
         <NavStyle>
             <ul>
                 <li>
-                    <LinkStyled to='#about'>About</LinkStyled>
+                    <LinkStyled to='#career'>Career</LinkStyled>
                 </li>
                 <li>
-                    <LinkStyled to='#career'>Career</LinkStyled>
+                    <LinkStyled to='#about'>About</LinkStyled>
                 </li>
                 <li>
                     <LinkStyled to='#testimonials'>Testimonials</LinkStyled>
                 </li>
                 <li>
-                    <LinkStyled to='/press'>Press</LinkStyled>
+                    <LinkStyled to={Paths.PRESS}>Press</LinkStyled>
                 </li>
                 <li>
                     <LinkStyled to='/#contact'>Contact</LinkStyled>
