@@ -12,8 +12,8 @@ const HeroSection = styled.section`
 `;
 
 const MapImage = styled.img`
-    height: 45rem;
-    top: 0rem;
+    height: 50rem;
+    top: -2rem;
     opacity: 0.2;
     position: absolute;
     left: 30%;

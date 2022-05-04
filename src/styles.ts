@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 
-export const baseScreenReaderOnly = css`
+const baseScreenReaderOnly = css`
     display: inline-block;
     position: absolute;
     overflow: hidden;
@@ -11,3 +11,17 @@ export const baseScreenReaderOnly = css`
     padding: 0;
     border: 0;
 `;
+
+const pBase = css`
+    font-size: 1.4rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+`;
+
+const largeParagraph = css`
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+`;
+
+export { baseScreenReaderOnly, pBase, largeParagraph };

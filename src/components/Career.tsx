@@ -4,7 +4,7 @@ import Columns from './Columns';
 import Wrapper from './Wrapper';
 import MurrayImg from 'assets/murray.png';
 import { AppColors } from 'config/colors';
-import { baseScreenReaderOnly } from 'styles';
+import { baseScreenReaderOnly, largeParagraph, pBase } from 'styles';
 import SectionTitle from './SectionTitle';
 
 const Image = styled.img`
@@ -22,9 +22,7 @@ const AboutContent = styled.div`
 `;
 
 const LargeParagraph = styled.h1`
-    font-size: 1.8rem;
-    line-height: 1.6;
-    margin-bottom: 3rem;
+    ${largeParagraph}
 `;
 const SubHeading = styled.h2`
     font-weight: 700;
@@ -33,8 +31,7 @@ const SubHeading = styled.h2`
     margin: 2rem 0 0.8rem;
 `;
 const Paragraph = styled.p`
-    font-size: 1.2rem;
-    line-height: 1.6;
+    ${pBase}
 `;
 export default function Career() {
     return (
@@ -45,33 +42,25 @@ export default function Career() {
                         <Image src={MurrayImg} alt='' />
                     </div>
                     <AboutContent>
-                        <SectionTitle srOnly>Murray's Career</SectionTitle>
+                        <SectionTitle srOnly>More About Murray</SectionTitle>
                         <LargeParagraph>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus mollitia cum cumque nam
-                            aspernatur dolores sequi quis ex qui provident.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Dolores maxime provident eum officiis iure,
+                            molestias ut perspiciatis.
                         </LargeParagraph>
-                        <SubHeading>Artistic director</SubHeading>
+
                         <Paragraph>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus mollitia cum cumque nam
-                            aspernatur dolores sequi quis ex qui provident
-                            fugit, maxime amet officia odit eum. Corrupti rerum
-                            velit recusandae?
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatem, ex nulla porro tenetur
+                            repellendus, magni non rerum quidem quis sit aperiam
+                            quos quod deserunt nam rem officiis aut error velit!
                         </Paragraph>
-                        <SubHeading>Entreprenuer</SubHeading>
                         <Paragraph>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus mollitia cum cumque nam
-                            aspernatur dolores sequi quis ex qui provident
-                            fugit.
-                        </Paragraph>
-                        <SubHeading>Creative Consultancy</SubHeading>
-                        <Paragraph>
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Voluptatibus mollitia cum cumque nam
-                            aspernatur dolores sequi quis ex qui provident
-                            fugit, odit eum. Corrupti rerum velit recusandae?
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Vitae est dolore dicta repellat ipsum!
+                            Nesciunt ab quaerat inventore consequatur eligendi
+                            perspiciatis et, cupiditate dolorum hic corrupti
+                            quos repudiandae tempore impedit.
                         </Paragraph>
                     </AboutContent>
                 </Columns>

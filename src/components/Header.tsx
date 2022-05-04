@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import Logo from 'assets/logo_themed.png';
+import LogoImg from 'assets/logo_themed.png';
 import Wrapper from './Wrapper';
 import Nav from './Nav';
 import { AppColors } from 'config/colors';
 
-const Image = styled.img`
+const Logo = styled.img`
     width: 3rem;
 `;
 
@@ -31,7 +31,7 @@ export default function Header() {
         <Wrapper>
             <HeaderStyle>
                 <Brand>
-                    <Image src={Logo} alt='' />
+                    <Logo src={LogoImg} alt='' />
                     <H1>MURRAY GRANT</H1>
                 </Brand>
                 <Nav />
