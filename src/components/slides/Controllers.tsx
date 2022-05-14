@@ -40,7 +40,7 @@ export default function Controllers({
         <ControllerStyle>
             <ControllerList>
                 {list.map((li, index) => (
-                    <ControllerListItem>
+                    <ControllerListItem key={`controllers-item-${index}`}>
                         <ControllerButton
                             onClick={() => changeSlide(index)}
                             key={`controller-${index}`}

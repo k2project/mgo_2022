@@ -105,5 +105,29 @@ const testimonialsDesktop = [
     [t11, t9],
     [t5],
 ];
+const testimonialsLaptop = [
+    [t4],
+    [t3],
+    [t1],
+    [t6, t8],
+    [t2],
+    [t7, t10],
+    [t11],
+    [t9],
+    [t5],
+];
+const testimonialsTablet = [
+    [t1],
+    [t2],
+    [t3],
+    [t4],
+    [t5],
+    [t6],
+    [t7],
+    [t8],
+    [t9],
+    [t10],
+    [t11],
+];
 
-export { testimonialsDesktop };
+export { testimonialsDesktop, testimonialsTablet, testimonialsLaptop };

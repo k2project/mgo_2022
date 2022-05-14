@@ -2,7 +2,7 @@ import { device } from 'config/devices';
 import styled from 'styled-components';
 
 export const WrapperStyle = styled.div<{ height: string }>`
-    max-width: 100rem;
+    max-width: 102.4rem;
     margin: auto;
     min-height: ${(props) => props.height};
     padding: 0 4rem;

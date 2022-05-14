@@ -4,9 +4,15 @@ import { largeParagraph } from 'styles';
 import SectionTitle from './SectionTitle';
 import { WrapperStyle } from './Wrapper';
 import Globe from 'assets/globe.png';
-import { testimonialsDesktop } from 'config/testimonialsData';
+import {
+    testimonialsLaptop,
+    testimonialsTablet,
+    testimonialsDesktop,
+} from 'config/testimonialsData';
 import Quote, { QuoteMargin } from './slides/Quote';
 import Controllers from './slides/Controllers';
+import useScreenType, { ScreenType } from 'helpers/useScreenType';
+import { device } from 'config/devices';
 
 const WrapperContainer = styled(WrapperStyle)`
     padding-top: 14rem;
@@ -20,6 +26,10 @@ const GlobeImage = styled.img`
     opacity: 0.3;
     position: absolute;
     right: -15rem;
+    @media ${device.tablet} {
+        height: 50rem;
+        top: 20rem;
+    }
 `;
 
 const LargeParagraph = styled.p`
@@ -38,12 +48,32 @@ const Slide = styled.div`
 
 export default function Testimonials() {
     const SLIDE_DURATION = 8000;
-    const [pauseSlide, setPauseSlide] = useState(false);
-    const currentTestimonials = testimonialsDesktop;
+    // const currentTestimonials = testimonialsDesktop;
+    const [currentTestimonials, setCurrentTestimonials] =
+        useState(testimonialsDesktop);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
     const [currentSlide, setCurrentSlide] = useState(currentTestimonials[0]);
+    const [pauseSlide, setPauseSlide] = useState(false);
+    const screenType = useScreenType();
 
     const sliderRef = useRef<NodeJS.Timeout>();
+
+    useEffect(() => {
+        let currentTestimonials;
+        switch (screenType) {
+            case ScreenType.Mobile:
+            case ScreenType.Tablet:
+                currentTestimonials = testimonialsTablet;
+                break;
+            case ScreenType.Laptop:
+                currentTestimonials = testimonialsLaptop;
+                break;
+            case ScreenType.Desktop:
+            default:
+                currentTestimonials = testimonialsDesktop;
+        }
+        setCurrentTestimonials(currentTestimonials);
+    }, [screenType]);
 
     const startSlider = () =>
         setInterval(() => {

@@ -1,5 +1,6 @@
 import ExternalLink from 'components/links/ExternalLink';
 import { AppColors } from 'config/colors';
+import { device } from 'config/devices';
 import { ITestimonial } from 'config/testimonialsData';
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
@@ -41,6 +42,18 @@ const QuoteStyle = styled.div<{ featured: boolean; delay: number }>`
     animation-fill-mode: forwards;
     opacity: 0;
     box-shadow: -5px 15px 20px -5px rgba(0, 0, 0, 0.1);
+
+    @media ${device.laptop} {
+        padding: 3rem;
+    }
+    @media ${device.tablet} {
+        font-size: 1.2rem;
+        padding: 2rem 3rem;
+        height: 44rem;
+    }
+    @media ${device.mobileL} {
+        height: 50rem;
+    }
 `;
 
 const Text = styled.div`
