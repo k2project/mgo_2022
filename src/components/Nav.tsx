@@ -1,8 +1,9 @@
 import { AppColors } from 'config/colors';
+import { device } from 'config/devices';
 import { Paths } from 'config/routes';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import LinkStyled from './LinkStyled';
+import LinkStyled from './links/LinkStyled';
 
 const NavStyle = styled.nav`
     li {
@@ -13,6 +14,9 @@ const NavStyle = styled.nav`
     a {
         text-decoration: none;
         color: ${AppColors.COLOR_TEXT};
+    }
+    @media ${device.tablet} {
+        display: none;
     }
 `;
 
@@ -27,11 +31,11 @@ export default function Nav() {
                     <LinkStyled to='#about'>About</LinkStyled>
                 </li>
                 <li>
-                    <LinkStyled to='#testimonials'>Testimonials</LinkStyled>
+                    <LinkStyled to='#endorsements'>Endorsements</LinkStyled>
                 </li>
-                <li>
+                {/* <li>
                     <LinkStyled to={Paths.PRESS}>Press</LinkStyled>
-                </li>
+                </li> */}
                 <li>
                     <LinkStyled to='/#contact'>Contact</LinkStyled>
                 </li>

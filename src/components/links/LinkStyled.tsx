@@ -2,18 +2,10 @@ import { AppColors } from 'config/colors';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { linkBase } from 'styles';
 
 const LinkStyle = styled(Link)`
-    text-decoration: none;
-    color: ${AppColors.COLOR_TEXT};
-    &:visited,
-    &:active {
-        color: ${AppColors.COLOR_TEXT};
-    }
-
-    &:hover {
-        text-decoration: underline;
-    }
+    ${linkBase}
 `;
 
 export default function LinkStyled({

@@ -1,6 +1,7 @@
+import { AppColors } from 'config/colors';
 import { css } from 'styled-components';
 
-const baseScreenReaderOnly = css`
+export const baseScreenReaderOnly = css`
     display: inline-block;
     position: absolute;
     overflow: hidden;
@@ -12,16 +13,27 @@ const baseScreenReaderOnly = css`
     border: 0;
 `;
 
-const pBase = css`
+export const pBase = css`
     font-size: 1.4rem;
-    line-height: 1.8;
+    line-height: 1.6;
     margin-bottom: 2rem;
 `;
 
-const largeParagraph = css`
+export const largeParagraph = css`
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4rem;
 `;
 
-export { baseScreenReaderOnly, pBase, largeParagraph };
+export const linkBase = css`
+    text-decoration: none;
+    color: ${AppColors.COLOR_TEXT};
+    &:visited,
+    &:active {
+        color: ${AppColors.COLOR_TEXT};
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+`;

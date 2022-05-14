@@ -9,11 +9,10 @@ import SectionTitle from './SectionTitle';
 
 const Section = styled.section`
     background-color: ${AppColors.THEME_PRIMARY};
+    padding: 16rem 0 11rem;
 `;
 
-const Div = styled.div`
-    padding: 12rem 0 10rem;
-`;
+const Div = styled.div``;
 
 const LargeParagraph = styled.p`
     ${largeParagraph}
@@ -25,9 +24,17 @@ const Paragraph = styled.p`
 
 const SubHeading = styled.h2`
     font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin: 2rem 0 0.8rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.4rem;
+    text-transform: uppercase;
+`;
+
+const Span = styled.span`
+    background: ${AppColors.COLOR_GOLD};
+    padding: 5px 7px;
+    margin: 0 2px;
 `;
 
 export default function About() {
@@ -38,12 +45,13 @@ export default function About() {
                     <Div>
                         <SectionTitle>Murray's Career</SectionTitle>
                         <LargeParagraph>
-                            Murray graduated from London’s Bird College in 2001
-                            and immediately won a contract in London City
-                            Opera’s US tour of The Merry Widow (New York, Los
-                            Angeles, San Francisco and others). He performed in
-                            numerous musicals subsequently, including Jesus
-                            Christ Superstar (Vienna), Elisabeth (Vienna), Paris
+                            Murray graduated from{' '}
+                            <Span>London’s Bird College</Span> in 2001 and
+                            immediately won a contract in London City Opera’s US
+                            tour of The Merry Widow (New York, Los Angeles, San
+                            Francisco and others). He performed in numerous
+                            musicals subsequently, including Jesus Christ
+                            Superstar (Vienna), Elisabeth (Vienna), Paris
                             Can-Can (Sydney, Melbourne, Auckland), Grease
                             (Zurich) and Saturday Night Fever (Vienna).
                         </LargeParagraph>

@@ -3,6 +3,7 @@ import styled, { css } from 'styled-components';
 import Edinburgh from 'assets/edinburgh2.png';
 import { WrapperStyle } from './Wrapper';
 import LogoImg from 'assets/logo_gold.png';
+import { device } from 'config/devices';
 
 const Section = styled.section`
     background-color: ${AppColors.THEME_TERTIARY};
@@ -46,22 +47,38 @@ const Heading2 = styled.h2`
     ${headingStyle}
 `;
 
-const ParagrapgLarge = styled.p`
+const ParagraphLarge = styled.p`
     font-size: 2.4rem;
+    @media ${device.mobileL} {
+        font-size: 2rem;
+    }
 `;
-const Paragrapg = styled.p`
+const Paragraph = styled.p`
     font-size: 1.6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 4rem;
     margin-bottom: 1rem;
+    @media ${device.mobileL} {
+        display: block;
+        margin-bottom: 2.5rem;
+    }
 `;
 const SpanLeft = styled.span`
     font-weight: 600;
     text-align: right;
+    @media ${device.mobileL} {
+        display: block;
+        text-align: center;
+        margin-bottom: 0.8rem;
+    }
 `;
 const SpanRight = styled.span`
     text-align: left;
+    @media ${device.mobileL} {
+        display: block;
+        text-align: center;
+    }
 `;
 
 export default function Contact() {
@@ -71,16 +88,16 @@ export default function Contact() {
             <WrapperContainer height='auto'>
                 <Logo src={LogoImg} alt='' />
                 <Heading>DIRECT INQUIRIES</Heading>
-                <ParagrapgLarge>murray@murraygrantofficial.com</ParagrapgLarge>
+                <ParagraphLarge>murray@murraygrantofficial.com</ParagraphLarge>
                 <Heading2>MEDIA INQUIRIES</Heading2>
-                <Paragrapg>
+                <Paragraph>
                     <SpanLeft>Amy Anderson Brown</SpanLeft>
                     <SpanRight>amy@thisistailormade.com</SpanRight>
-                </Paragrapg>
-                <Paragrapg>
+                </Paragraph>
+                <Paragraph>
                     <SpanLeft>Alex Schweitzer-Thompsonn</SpanLeft>
                     <SpanRight>alex@thisistailormade.com</SpanRight>
-                </Paragrapg>
+                </Paragraph>
             </WrapperContainer>
         </Section>
     );

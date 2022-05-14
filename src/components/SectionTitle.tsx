@@ -9,7 +9,7 @@ const Title = styled.h1<{ srOnly: boolean }>`
     text-transform: uppercase;
     color: ${AppColors.THEME_SECONDARY};
     margin-bottom: 1.4rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.15rem;
     ${(props) => props.srOnly && baseScreenReaderOnly}
 `;
 

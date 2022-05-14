@@ -21,15 +21,10 @@ const AboutContent = styled.div`
     min-height: 20rem;
 `;
 
-const LargeParagraph = styled.h1`
+const LargeParagraph = styled.p`
     ${largeParagraph}
 `;
-const SubHeading = styled.h2`
-    font-weight: 700;
-    font-size: 1.4rem;
-    line-height: 1.6;
-    margin: 2rem 0 0.8rem;
-`;
+
 const Paragraph = styled.p`
     ${pBase}
 `;
