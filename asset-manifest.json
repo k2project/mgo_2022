@@ -1,20 +1,24 @@
 {
   "files": {
     "main.css": "/mgo_2022/static/css/main.e9eca144.css",
-    "main.js": "/mgo_2022/static/js/main.c4bcf0a5.js",
+    "main.js": "/mgo_2022/static/js/main.ab4cc635.js",
     "static/js/787.2649fb75.chunk.js": "/mgo_2022/static/js/787.2649fb75.chunk.js",
     "static/media/edinburgh2.png": "/mgo_2022/static/media/edinburgh2.02c3b4d9940a02eb2af5.png",
     "static/media/globe.png": "/mgo_2022/static/media/globe.359cd6d6a51637b808a5.png",
     "static/media/map2.png": "/mgo_2022/static/media/map2.8729b01a48cfbf7bb3f7.png",
     "static/media/murray.png": "/mgo_2022/static/media/murray.a31bce615a29ec135986.png",
+    "static/media/fairmont.png": "/mgo_2022/static/media/fairmont.1adcd959424c69d9441e.png",
+    "static/media/beautiful.png": "/mgo_2022/static/media/beautiful.3a5dafbfabdfe42f5fb5.png",
+    "static/media/nms.png": "/mgo_2022/static/media/nms.52e8ff16639ce9a7d15a.png",
     "static/media/logo_themed.png": "/mgo_2022/static/media/logo_themed.feeb2131b76b4405ef5e.png",
+    "static/media/iab.png": "/mgo_2022/static/media/iab.ebc3c3683cdfa5003c60.png",
     "index.html": "/mgo_2022/index.html",
     "main.e9eca144.css.map": "/mgo_2022/static/css/main.e9eca144.css.map",
-    "main.c4bcf0a5.js.map": "/mgo_2022/static/js/main.c4bcf0a5.js.map",
+    "main.ab4cc635.js.map": "/mgo_2022/static/js/main.ab4cc635.js.map",
     "787.2649fb75.chunk.js.map": "/mgo_2022/static/js/787.2649fb75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9eca144.css",
-    "static/js/main.c4bcf0a5.js"
+    "static/js/main.ab4cc635.js"
   ]
 }
