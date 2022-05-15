@@ -14,6 +14,9 @@ import Controllers from './slides/Controllers';
 import useScreenType, { ScreenType } from 'helpers/useScreenType';
 import { device } from 'config/devices';
 
+const TestimonialsSection = styled.section`
+    overflow: hidden;
+`;
 const WrapperContainer = styled(WrapperStyle)`
     padding-top: 14rem;
     padding-bottom: 14rem;
@@ -21,14 +24,13 @@ const WrapperContainer = styled(WrapperStyle)`
 `;
 
 const GlobeImage = styled.img`
-    height: 100%;
-    bottom: -10rem;
+    height: 60rem;
+    top: 12rem;
     opacity: 0.3;
     position: absolute;
     right: -15rem;
     @media ${device.tablet} {
-        height: 50rem;
-        top: 20rem;
+        left: 30%;
     }
 `;
 
@@ -48,7 +50,6 @@ const Slide = styled.div`
 
 export default function Testimonials() {
     const SLIDE_DURATION = 8000;
-    // const currentTestimonials = testimonialsDesktop;
     const [currentTestimonials, setCurrentTestimonials] =
         useState(testimonialsDesktop);
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -59,20 +60,22 @@ export default function Testimonials() {
     const sliderRef = useRef<NodeJS.Timeout>();
 
     useEffect(() => {
-        let currentTestimonials;
+        let newCurrentTestimonials;
         switch (screenType) {
             case ScreenType.Mobile:
             case ScreenType.Tablet:
-                currentTestimonials = testimonialsTablet;
+                newCurrentTestimonials = testimonialsTablet;
                 break;
             case ScreenType.Laptop:
-                currentTestimonials = testimonialsLaptop;
+                newCurrentTestimonials = testimonialsLaptop;
                 break;
             case ScreenType.Desktop:
             default:
-                currentTestimonials = testimonialsDesktop;
+                newCurrentTestimonials = testimonialsDesktop;
         }
-        setCurrentTestimonials(currentTestimonials);
+        setCurrentTestimonials(newCurrentTestimonials);
+        setCurrentSlideIndex(0);
+        setCurrentSlide(newCurrentTestimonials[0]);
     }, [screenType]);
 
     const startSlider = () =>
@@ -99,7 +102,7 @@ export default function Testimonials() {
                 clearInterval(sliderRef.current);
             }
         };
-    }, [pauseSlide]);
+    }, [pauseSlide, screenType]);
 
     const onMouseEnter = () => setPauseSlide(true);
     const onMouseLeave = () => setPauseSlide(false);
@@ -113,7 +116,7 @@ export default function Testimonials() {
     };
 
     return (
-        <section id='endorsements'>
+        <TestimonialsSection id='endorsements'>
             <WrapperContainer height='50rem'>
                 <GlobeImage src={Globe} alt='' />
                 <SectionTitle>Industry Endorsements</SectionTitle>
@@ -137,6 +140,6 @@ export default function Testimonials() {
                     />
                 </Slider>
             </WrapperContainer>
-        </section>
+        </TestimonialsSection>
     );
 }

@@ -8,6 +8,7 @@ import { device } from 'config/devices';
 import styled from 'styled-components';
 
 const Container = styled.div`
+    overflow: hidden;
     /* @media ${device.laptop} {
         border: solid 1px green;
     }

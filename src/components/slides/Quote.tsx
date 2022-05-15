@@ -44,7 +44,8 @@ const QuoteStyle = styled.div<{ featured: boolean; delay: number }>`
     box-shadow: -5px 15px 20px -5px rgba(0, 0, 0, 0.1);
 
     @media ${device.laptop} {
-        padding: 3rem;
+        padding-top: 3rem;
+        height: 38rem;
     }
     @media ${device.tablet} {
         font-size: 1.2rem;

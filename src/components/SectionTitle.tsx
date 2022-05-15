@@ -5,11 +5,9 @@ import { baseScreenReaderOnly } from 'styles';
 
 const Title = styled.h1<{ srOnly: boolean }>`
     font-size: 1.4rem;
-    font-weight: 700;
     text-transform: uppercase;
     color: ${AppColors.THEME_SECONDARY};
     margin-bottom: 1.4rem;
-    letter-spacing: 0.15rem;
     ${(props) => props.srOnly && baseScreenReaderOnly}
 `;
 

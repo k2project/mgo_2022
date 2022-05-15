@@ -21,7 +21,7 @@ const Brand = styled.div`
 `;
 
 const H1 = styled.h1`
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     padding-left: 1.6rem;
     color: ${AppColors.THEME_SECONDARY};
 `;
