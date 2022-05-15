@@ -12,13 +12,14 @@ import { AppColors } from 'config/colors';
 import { baseScreenReaderOnly, largeParagraph, pBase } from 'styles';
 import SectionTitle from './SectionTitle';
 import { device } from 'config/devices';
+import Logo from 'assets/logo_themed.png';
 
 const CareerSection = styled.section`
     ${WrapperStyle} {
         padding: 0;
     }
 `;
-const Image = styled.img`
+const MurrayImage = styled.img`
     height: 120%;
     top: -20%;
     position: absolute;
@@ -28,9 +29,24 @@ const Image = styled.img`
         left: 4rem;
     }
     @media ${device.mobileL} {
-        left: -4rem;
+        left: 0rem;
     }
     @media ${device.mobileS} {
+    }
+`;
+
+const LogoImg = styled.img`
+    display: none;
+    @media ${device.tablet} {
+        display: block;
+        height: 60%;
+        opacity: 0.05;
+        right: 10%;
+        bottom: 20%;
+        position: absolute;
+    }
+    @media ${device.mobileL} {
+        display: none;
     }
 `;
 
@@ -97,7 +113,8 @@ export default function Career() {
             <Wrapper>
                 <Columns>
                     <LeftColumn>
-                        <Image src={MurrayImg} alt='' />
+                        <LogoImg src={Logo} alt='' />
+                        <MurrayImage src={MurrayImg} alt='' />
                         <LargeParagraphExtract>
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Dolores maxime provident eum officiis iure,
@@ -118,14 +135,6 @@ export default function Career() {
                                 tenetur repellendus, magni non rerum quidem quis
                                 sit aperiam quos quod deserunt nam rem officiis
                                 aut error velit!
-                            </Paragraph>
-                            <Paragraph>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Vitae est dolore dicta
-                                repellat ipsum! Nesciunt ab quaerat inventore
-                                consequatur eligendi perspiciatis et, cupiditate
-                                dolorum hic corrupti quos repudiandae tempore
-                                impedit.
                             </Paragraph>
                             <Paragraph>
                                 Lorem ipsum dolor sit amet consectetur

@@ -6,6 +6,7 @@ import MurrayImg from 'assets/murray.png';
 import { AppColors } from 'config/colors';
 import { pBase, largeParagraph } from 'styles';
 import SectionTitle from './SectionTitle';
+import Companies from './Companies';
 
 const Section = styled.section`
     background-color: ${AppColors.THEME_PRIMARY};
@@ -85,7 +86,7 @@ export default function About() {
                             World Final in Croatia.
                         </Paragraph>
                     </Div>
-                    <div>logos</div>
+                    <Companies />
                 </Columns>
             </Wrapper>
         </Section>
