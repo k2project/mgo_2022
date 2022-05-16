@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mgo_2022/static/css/main.e9eca144.css",
-    "main.js": "/mgo_2022/static/js/main.f00887d9.js",
+    "main.js": "/mgo_2022/static/js/main.f54b4f4a.js",
     "static/js/787.2649fb75.chunk.js": "/mgo_2022/static/js/787.2649fb75.chunk.js",
     "static/media/edinburgh2.png": "/mgo_2022/static/media/edinburgh2.02c3b4d9940a02eb2af5.png",
     "static/media/globe.png": "/mgo_2022/static/media/globe.359cd6d6a51637b808a5.png",
@@ -9,7 +9,10 @@
     "static/media/murray.png": "/mgo_2022/static/media/murray.a31bce615a29ec135986.png",
     "static/media/maximillion.png": "/mgo_2022/static/media/maximillion.df2d661028de01866a35.png",
     "static/media/fairmont.png": "/mgo_2022/static/media/fairmont.1adcd959424c69d9441e.png",
+    "static/media/bos.png": "/mgo_2022/static/media/bos.71290336a36fd3866093.png",
     "static/media/beautiful.png": "/mgo_2022/static/media/beautiful.3a5dafbfabdfe42f5fb5.png",
+    "static/media/radisson.png": "/mgo_2022/static/media/radisson.1f4732015d166594a1a2.png",
+    "static/media/murrayfield.png": "/mgo_2022/static/media/murrayfield.21b4150a246aecbe9db1.png",
     "static/media/nms.png": "/mgo_2022/static/media/nms.52e8ff16639ce9a7d15a.png",
     "static/media/logo_themed.png": "/mgo_2022/static/media/logo_themed.feeb2131b76b4405ef5e.png",
     "static/media/sheraton.png": "/mgo_2022/static/media/sheraton.396a2cd482c5d46e8aa9.png",
@@ -17,11 +20,11 @@
     "static/media/gleneagels.png": "/mgo_2022/static/media/gleneagels.5763ae434e7a2655d41f.png",
     "index.html": "/mgo_2022/index.html",
     "main.e9eca144.css.map": "/mgo_2022/static/css/main.e9eca144.css.map",
-    "main.f00887d9.js.map": "/mgo_2022/static/js/main.f00887d9.js.map",
+    "main.f54b4f4a.js.map": "/mgo_2022/static/js/main.f54b4f4a.js.map",
     "787.2649fb75.chunk.js.map": "/mgo_2022/static/js/787.2649fb75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9eca144.css",
-    "static/js/main.f00887d9.js"
+    "static/js/main.f54b4f4a.js"
   ]
 }
