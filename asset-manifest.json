@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mgo_2022/static/css/main.e9eca144.css",
-    "main.js": "/mgo_2022/static/js/main.1f7802a2.js",
+    "main.js": "/mgo_2022/static/js/main.787dc2e6.js",
     "static/js/787.2649fb75.chunk.js": "/mgo_2022/static/js/787.2649fb75.chunk.js",
     "static/media/edinburgh2.png": "/mgo_2022/static/media/edinburgh2.02c3b4d9940a02eb2af5.png",
     "static/media/globe.png": "/mgo_2022/static/media/globe.359cd6d6a51637b808a5.png",
@@ -24,11 +24,11 @@
     "static/media/gleneagels.png": "/mgo_2022/static/media/gleneagels.5763ae434e7a2655d41f.png",
     "index.html": "/mgo_2022/index.html",
     "main.e9eca144.css.map": "/mgo_2022/static/css/main.e9eca144.css.map",
-    "main.1f7802a2.js.map": "/mgo_2022/static/js/main.1f7802a2.js.map",
+    "main.787dc2e6.js.map": "/mgo_2022/static/js/main.787dc2e6.js.map",
     "787.2649fb75.chunk.js.map": "/mgo_2022/static/js/787.2649fb75.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9eca144.css",
-    "static/js/main.1f7802a2.js"
+    "static/js/main.787dc2e6.js"
   ]
 }
