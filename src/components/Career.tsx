@@ -23,7 +23,7 @@ const MurrayImage = styled.img`
     height: 120%;
     top: -20%;
     position: absolute;
-    left: -5rem;
+    left: 0rem;
     @media ${device.laptop} {
         width: 50rem;
         left: 4rem;

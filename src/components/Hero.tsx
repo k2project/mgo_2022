@@ -29,7 +29,7 @@ const MapImage = styled.img`
 `;
 
 const TagLine = styled.h2`
-    font-size: 6rem;
+    font-size: 6.5rem;
     width: 20rem;
     color: ${AppColors.THEME_SECONDARY};
     @media ${device.tablet} {

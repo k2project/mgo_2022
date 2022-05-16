@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
-import Columns from './Columns';
+import Columns, { ColumnStyle } from './Columns';
 import Wrapper from './Wrapper';
 import MurrayImg from 'assets/murray.png';
 import { AppColors } from 'config/colors';
 import { pBase, largeParagraph } from 'styles';
 import SectionTitle from './SectionTitle';
-import Companies from './Companies';
+import Companies from './companies/Companies';
+import { device } from 'config/devices';
 
 const Section = styled.section`
     background-color: ${AppColors.THEME_PRIMARY};
     padding: 16rem 0 11rem;
+    ${ColumnStyle} {
+        justify-items: center;
+        align-items: center;
+    }
 `;
 
 const Div = styled.div``;
