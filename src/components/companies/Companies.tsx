@@ -15,9 +15,19 @@ const CompaniesContainer = styled.div`
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     @media ${device.laptop} {
-        padding: 6rem 0 10rem;
+        padding: 8rem 0 2rem;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    @media ${device.tablet} {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @media ${device.mobileL} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media ${device.mobileM} {
+        grid-template-columns: repeat(3, 1fr);
     }
 `;
 
