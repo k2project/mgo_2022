@@ -58,16 +58,17 @@ import Ted from 'assets/logos/ted.png';
 import DanceStar from 'assets/logos/ds.png';
 import Bbe from 'assets/logos/bbe.png';
 import Bbp from 'assets/logos/bbp.png';
+import Network from 'assets/logos/network.png';
 
 export const companiesLogos = [
     Bbp,
     Mga,
-    Ted,
-    DanceStar,
+    Network,
     Bbe,
     Iab,
-    Nms,
-    Hrm,
+    DanceStar,
+    Ted,
+    U,
     Sykes,
     Balmoral,
     Fairmont,
@@ -78,7 +79,7 @@ export const companiesLogos = [
     Gleneagels,
     Prudential,
     IrnBru,
-    U,
+    Bp,
     Hn,
     Radisson,
     Herald,
@@ -98,7 +99,7 @@ export const companiesLogos = [
     Ben,
     Hilton,
     Puregym,
-    Bp,
+    Hrm,
     DeutscheBank,
     Cada,
     Mackh,
@@ -110,7 +111,8 @@ export const companiesLogos = [
     Sva,
     Uc,
     Raynolds,
-    Phenix,
+    // Phenix,
+    Nms,
     Lipa,
     Hamosands,
     Montfort,
