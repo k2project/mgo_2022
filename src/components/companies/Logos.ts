@@ -1,3 +1,4 @@
+import Mga from 'assets/logos/mga.png';
 import Iab from 'assets/logos/iab.png';
 import Nms from 'assets/logos/nms.png';
 import U from 'assets/logos/u.png';
@@ -33,29 +34,58 @@ import Essential from 'assets/logos/essential.png';
 import Puregym from 'assets/logos/puregym.png';
 import Bp from 'assets/logos/bp.png';
 import DeutscheBank from 'assets/logos/deutchebank.png';
+import Cada from 'assets/logos/cada.png';
+import Mackh from 'assets/logos/mackh.png';
+import Fierce from 'assets/logos/fierce.png';
+import Dancebase from 'assets/logos/dancebase.png';
+import CentreStage from 'assets/logos/centralstage.png';
+import Pwt from 'assets/logos/pwt.png';
+import Ncl from 'assets/logos/ncl.png';
+import Sva from 'assets/logos/sva.png';
+import Uc from 'assets/logos/uc.png';
+import Raynolds from 'assets/logos/raynolds.png';
+import Phenix from 'assets/logos/phenix.png';
+import Lipa from 'assets/logos/lipa.png';
+import Hamosands from 'assets/logos/hamosands.png';
+import Montfort from 'assets/logos/montfort.png';
+import Tybos from 'assets/logos/tybos.png';
+import Mibs from 'assets/logos/mibs.png';
+import Icfe from 'assets/logos/icfe.png';
+import Hammond from 'assets/logos/hammond.png';
+import Urdang from 'assets/logos/urdang.png';
+import Ebs from 'assets/logos/ebs.png';
+import Ted from 'assets/logos/ted.png';
+import DanceStar from 'assets/logos/ds.png';
+import Bbe from 'assets/logos/bbe.png';
+import Bbp from 'assets/logos/bbp.png';
 
 export const companiesLogos = [
+    Mga,
+    Ted,
+    DanceStar,
+    Bbe,
+    Bbp,
     Iab,
     Nms,
     U,
-    Beautiful,
     Hrm,
+    Beautiful,
     Balmoral,
     Fairmont,
-    Maximillion,
     EY,
+    Maximillion,
     Brodies,
     Sheraton,
-    IrnBru,
     Gleneagels,
+    IrnBru,
     Prudential,
     Hn,
     Herald,
     Radisson,
-    Zeal,
     HotelAwards,
     Murrayfield,
     E,
+    Zeal,
     Bos,
     JackWills,
     Apt,
@@ -70,4 +100,24 @@ export const companiesLogos = [
     Puregym,
     Bp,
     DeutscheBank,
+    Cada,
+    Mackh,
+    Fierce,
+    Dancebase,
+    CentreStage,
+    Pwt,
+    Ncl,
+    Sva,
+    Uc,
+    Raynolds,
+    Phenix,
+    Lipa,
+    Hamosands,
+    Montfort,
+    Tybos,
+    Mibs,
+    Icfe,
+    Hammond,
+    Urdang,
+    Ebs,
 ];
